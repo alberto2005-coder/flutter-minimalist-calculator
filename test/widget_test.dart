@@ -14,7 +14,8 @@ void main() {
     await tester.pumpWidget(const CalculatorApp());
 
     // Verify that our starting output is 0.
-    expect(find.text('0'), findsOneWidget);
+    // It should find '0' in the display and on the button.
+    expect(find.text('0'), findsNWidgets(2));
   });
 
   testWidgets('Calculator number button press', (WidgetTester tester) async {
