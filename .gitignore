@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Additional local files
+local.properties
+*.jks
+*.keystore
+flutter_doctor.txt
+build_log*.txt
+android/build_log*.txt
