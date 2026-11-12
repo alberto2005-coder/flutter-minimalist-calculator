@@ -1,124 +1,145 @@
-# 📱 Flutter Minimalist Calculator | Calculadora Minimalista
+# Calculadora minimalista (Flutter)
 
-A clean, modern, and high-performance calculator built with Flutter. Optimized for speed and simplicity.
-*Una calculadora limpia, moderna y de alto rendimiento construida con Flutter. Optimizada para velocidad y simplicidad.*
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)](https://dart.dev/)
+[![MIT](https://img.shields.io/badge/Licencia-MIT-green)](LICENSE)
 
----
-
-## 🌍 Language / Idioma
-- [Español (ES)](#español)
-- [English (EN)](#english)
+[Español](#español) · [English](#english)
 
 ---
 
-<a name="español"></a>
-# 🇪🇸 Español
+## Español
 
-## 📋 Índice
-1. [Sobre el Proyecto](#sobre-es)
-2. [Características](#caracteristicas-es)
-3. [Cómo Empezar](#empezar-es)
-4. [Uso](#uso-es)
-5. [Tecnologías](#tecnologías-es)
+### Índice
 
-<a name="sobre-es"></a>
-## 🚀 Sobre el Proyecto
-Esta es una calculadora de estilo minimalista desarrollada en Flutter. Sigue una estética moderna inspirada en el diseño de iOS, ofreciendo una experiencia de usuario fluida y sin distracciones.
+- [Descripción](#descripción)
+- [Características](#características)
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Licencia](#licencia)
 
-<a name="caracteristicas-es"></a>
-## ✨ Características
-- **Operaciones Básicas**: Suma, resta, multiplicación y división.
-- **Diseño Responsivo**: Adaptado para móviles, tabletas y web.
-- **Interfaz Moderna**: Colores contrastados y tipografía clara.
-- **Manejo de Errores**: Control de división por cero y entradas inválidas.
+### Descripción
 
-<a name="empezar-es"></a>
-## 🛠️ Cómo Empezar
+Calculadora **Flutter** de estilo minimalista inspirada en el diseño de iOS: números grandes, contraste alto y cero elementos decorativos de más. Funciona en Android, iOS, escritorio y web desde el mismo código.
 
-### Prerrequisitos
+### Características
+
+- **Operaciones básicas**: suma, resta, multiplicación y división.
+- **Diseño responsivo**: se adapta a móvil, tableta, escritorio y navegador.
+- **Interfaz limpia**: tipografía clara, colores contrastados y botones amplios.
+- **Manejo de errores**: división por cero y entradas inválidas controladas, sin cerrar la app.
+- **Sin dependencias externas**: solo el SDK de Flutter.
+
+### Requisitos
+
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) instalado.
-- Un emulador configurado o un dispositivo conectado.
+- Un emulador configurado, un dispositivo conectado o Chrome para la versión web.
 
-### Instalación y Ejecución
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/flutter-minimalist-calculator.git
-   ```
-2. Entra en el directorio:
-   ```bash
-   cd flutter-minimalist-calculator
-   ```
-3. Instala las dependencias:
-   ```bash
-   flutter pub get
-   ```
-4. Ejecuta la aplicación:
-   ```bash
-   flutter run
-   ```
+### Instalación
 
-<a name="uso-es"></a>
-## 💡 Uso
-Simplemente pulsa los números y los operadores para realizar cálculos. El botón `C` borra la pantalla actual. El símbolo `=` muestra el resultado final.
+```bash
+git clone https://github.com/alberto2005-coder/flutter-minimalist-calculator.git
+cd flutter-minimalist-calculator
+flutter pub get
+flutter run
+```
 
-<a name="tecnologías-es"></a>
-## ⚙️ Tecnologías
-- **Flutter**: Framework de UI.
-- **Dart**: Lenguaje de programación.
+Variantes útiles:
+
+```bash
+flutter run -d chrome        # versión web
+flutter build apk --release  # Android
+flutter build web            # sitio estático en build/web
+```
+
+### Uso
+
+Pulsa los números y los operadores para construir la operación. `C` borra la pantalla y `=` muestra el resultado. La pantalla se ajusta automáticamente para no truncar números largos.
+
+### Estructura del proyecto
+
+```text
+flutter-minimalist-calculator/
+├── lib/
+│   └── main.dart        # Interfaz, estado y lógica de la calculadora
+├── test/                # Pruebas de widgets
+├── android/ · ios/ · web/ · windows/ · linux/ · macos/
+├── pubspec.yaml
+├── LICENSE
+└── README.md
+```
+
+### Licencia
+
+**MIT** — consulta [LICENSE](LICENSE).
 
 ---
 
-<a name="english"></a>
-# 🇺🇸 English
+## English
 
-## 📋 Table of Contents
-1. [About The Project](#about-en)
-2. [Features](#features-en)
-3. [Getting Started](#getting-started-en)
-4. [Usage](#usage-en)
-5. [Technologies](#technologies-en)
+### Table of contents
 
-<a name="about-en"></a>
-## 🚀 About The Project
-A minimalist calculator developed with Flutter. It follows a modern aesthetic inspired by iOS design, providing a fluid and distraction-free user experience.
+- [Overview](#overview)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project structure](#project-structure)
+- [License](#license)
 
-<a name="features-en"></a>
-## ✨ Features
-- **Basic Operations**: Addition, subtraction, multiplication, and division.
-- **Responsive Design**: Tailored for mobile, tablet, and web.
-- **Modern Interface**: High contrast colors and clear typography.
-- **Error Handling**: Custom handling for division by zero and invalid inputs.
+### Overview
 
-<a name="getting-started-en"></a>
-## 🛠️ Getting Started
+A minimalist **Flutter** calculator inspired by iOS design: large numbers, high contrast and no unnecessary decoration. One codebase runs on Android, iOS, desktop and the web.
 
-### Prerequisites
+### Features
+
+- **Basic operations**: addition, subtraction, multiplication and division.
+- **Responsive design**: adapts to phones, tablets, desktop and browsers.
+- **Clean interface**: clear typography, contrasting colours and comfortable tap targets.
+- **Error handling**: division by zero and invalid input are caught without crashing.
+- **No external dependencies**: just the Flutter SDK.
+
+### Requirements
+
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) installed.
-- A configured emulator or connected device.
+- A configured emulator, a connected device, or Chrome for the web build.
 
-### Installation & Execution
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/flutter-minimalist-calculator.git
-   ```
-2. Navigate to directory:
-   ```bash
-   cd flutter-minimalist-calculator
-   ```
-3. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Run the application:
-   ```bash
-   flutter run
-   ```
+### Installation
 
-<a name="usage-en"></a>
-## 💡 Usage
-Simply tap numbers and operators to perform calculations. The `C` button clears the current display. The `=` symbol shows the final result.
+```bash
+git clone https://github.com/alberto2005-coder/flutter-minimalist-calculator.git
+cd flutter-minimalist-calculator
+flutter pub get
+flutter run
+```
 
-<a name="technologies-en"></a>
-## ⚙️ Technologies
-- **Flutter**: UI Framework.
-- **Dart**: Programming language.
+Useful variants:
+
+```bash
+flutter run -d chrome        # web build
+flutter build apk --release  # Android
+flutter build web            # static site in build/web
+```
+
+### Usage
+
+Tap numbers and operators to build the expression. `C` clears the display and `=` shows the result. The display shrinks automatically so long numbers are not truncated.
+
+### Project structure
+
+```text
+flutter-minimalist-calculator/
+├── lib/
+│   └── main.dart        # UI, state and calculator logic
+├── test/                # Widget tests
+├── android/ · ios/ · web/ · windows/ · linux/ · macos/
+├── pubspec.yaml
+├── LICENSE
+└── README.md
+```
+
+### License
+
+**MIT** — see [LICENSE](LICENSE).
